@@ -1,6 +1,5 @@
-" let g:onedark_config = {
-"     \ 'style': 'darker',
-" \}
+let g:onedark_config = {
+    \ 'style': 'darker',
+\}
 colorscheme onedark
 
-        

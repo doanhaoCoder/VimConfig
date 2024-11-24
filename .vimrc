@@ -68,13 +68,13 @@ call plug#end()
 
 " Source additional settings from .vim files
 if has('nvim')
-for setting_file in split(glob(stdpath('config').'/settings/*.vim'), '\n')
-    execute 'source' setting_file
-endfor
-else
-" Đường dẫn thay thế cho Vim
-for setting_file in split(glob('~/.vim/settings/*.vim'), '\n')
-    execute 'source' setting_file
-endfor
-endif
+    for setting_file in split(glob(stdpath('config').'/settings/*.vim'), '\n')
+      execute 'source' setting_file
+    endfor
+  else
+    " Đường dẫn thay thế cho Vim
+    for setting_file in split(glob('~/.vim/settings/*.vim'), '\n')
+      execute 'source' setting_file
+    endfor
+  endif
   
